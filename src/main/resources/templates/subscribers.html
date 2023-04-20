@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Subscribers</title>
+</head>
+<body>
+<h1>Hello, <span th:text="${name}"></span>!</h1>
+<h2>Your Subscribers:</h2>
+<ul>
+    <li th:each="subscriber : ${subscribers}" th:text="${subscribers}"></li>
+</ul>
+</body>
+</html>

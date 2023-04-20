@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>
+        Subscribers
+    </title>
+</head>
+<body>
+
+<h1>Welcome to my page my friend</h1>
+<p>
+    How are you today? Keep exploring my page. Bubbye!!
+</p>
+
+<h2>Your Subscribers</h2>
+
+<table>
+    <thead>
+    <tr>
+        <td>Subscribers:</td>
+    </tr>
+    </thead>
+
+    <tbody>
+    {{#subscribersList.items}}
+        <tr>
+            <td>{{subscribersList.items.snippet.title}}</td>
+        </tr>
+    {{/subscribersList.items}}
+    </tbody>
+</table>
+</body>
+</html>
